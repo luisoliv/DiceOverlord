@@ -61,7 +61,7 @@ function connectBot(name,pass,network,chan,port)
     			client.say(chan, result);
     		}
     		else
-    			client.say(chan, "too many dices!");
+    			client.say(chan,"hey " + t + ", those are too many dices! (max. 25 dices)");
     	}
 	});
 }
@@ -72,9 +72,9 @@ main();
 function main()
 {
 	var nickName = "DiceOverlord";
-	var password = 24404699;
+	var password = diceBot;
 	var network = "irc.freenode.net";
-	var channel = "##uac";
+	var channel = "##uac";   //here you can change it for your channel
 	var port = 6999;
 	
 	print("Welcome to the IRC Dice bot, made by luisoliv");
